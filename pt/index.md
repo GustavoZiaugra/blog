@@ -1,5 +1,5 @@
 ---
 layout: home
-filter_category: en
+filter_category: pt
 title: Blog
 ---
