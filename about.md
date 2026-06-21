@@ -15,7 +15,7 @@ permalink: /about/
 
   <p>Hi, I'm <strong>Gustavo Ziaugra</strong> — a Senior Software Engineer with over 10 years of experience building software across Brazil and the US.</p>
 
-  <p>I work primarily with <strong>Elixir/Phoenix</strong>, <strong>Ruby</strong>, and <strong>DevOps</strong> (Docker, Kubernetes, Terraform, CI/CD). I also publish open-source Elixir libraries on <a href="https://hex.pm/users/gustavoziagura">Hex.pm</a>.</p>
+  <p>I work primarily with <strong>Elixir/Phoenix</strong>, <strong>Ruby</strong>, and <strong>DevOps</strong> (Docker, Kubernetes, Terraform, CI/CD). I also publish open-source Elixir libraries on <a href="https://hex.pm/users/gustavoziaugra">Hex.pm</a>.</p>
 
   <p>Problem-oriented and pragmatic, I enjoy solving real problems, learning new stacks, and taking on engineering challenges.</p>
 
