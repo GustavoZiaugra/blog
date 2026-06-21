@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="about-page">
+<div class="container about-page">
   <div class="about-header">
     <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Gustavo Ziaugra" class="avatar">
     <div>
