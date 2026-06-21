@@ -1,12 +1,30 @@
+{% if page.url contains "/pt/" %}
+  {% assign is_pt = true %}
+{% else %}
+  {% assign is_pt = false %}
+{% endif %}
+
 <header>
   <div class="container header-inner">
-    <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
+    <a href="{% if is_pt %}{{ site.baseurl }}/pt/{% else %}{{ site.baseurl }}/{% endif %}" class="site-title">{{ site.title }}</a>
     <nav>
-      <a href="{{ site.baseurl }}/pt/">pt</a>
-      <span>·</span>
-      <a href="{{ site.baseurl }}/about/">about</a>
-      <a href="{{ site.baseurl }}/pt/about/">sobre</a>
-      <a href="{{ site.baseurl }}/feed.xml">rss</a>
+      {% if is_pt %}
+        {% if page.lang_ref %}
+          {% assign en_page = site.posts | where: "lang_ref", page.lang_ref | where: "lang", "en" | first %}
+        {% endif %}
+        <a href="{{ site.baseurl }}{% if en_page %}{{ en_page.url }}{% else %}/{% endif %}">en</a>
+        <span>·</span>
+        <a href="{{ site.baseurl }}/pt/about/">sobre</a>
+        <a href="{{ site.baseurl }}/feed.xml">rss</a>
+      {% else %}
+        {% if page.lang_ref %}
+          {% assign pt_page = site.posts | where: "lang_ref", page.lang_ref | where: "lang", "pt" | first %}
+        {% endif %}
+        <a href="{{ site.baseurl }}{% if pt_page %}{{ pt_page.url }}{% else %}/pt/{% endif %}">pt</a>
+        <span>·</span>
+        <a href="{{ site.baseurl }}/about/">about</a>
+        <a href="{{ site.baseurl }}/feed.xml">rss</a>
+      {% endif %}
     </nav>
   </div>
 </header>
