@@ -161,6 +161,42 @@ header nav span { color: #ccc; }
   padding-left: 24px;
 }
 
+/* About */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-header h1 {
+  font-size: 28px;
+  margin: 0 0 4px;
+}
+
+.about-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.about-page ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.about-page ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
 /* Footer */
 footer {
   margin-top: 64px;
