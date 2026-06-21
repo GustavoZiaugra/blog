@@ -1,0 +1,40 @@
+title: Gustavo Ziaugra
+tagline: Desenvolvimento de software, tecnologia e projetos
+description: Blog pessoal sobre desenvolvimento de software, carreira em tecnologia e projetos DIY.
+url: "https://gustavoziagra.github.io"
+baseurl: "/blog"
+lang: pt_BR
+
+permalink: /:categories/:title/
+
+github:
+  username: GustavoZiaugra
+
+social:
+  name: Gustavo Ziaugra
+  email: gustavo.ziaugra@live.com
+  links:
+    - https://github.com/GustavoZiaugra
+    - https://www.linkedin.com/in/gustavo-ziaugra
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - README.md
